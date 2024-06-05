@@ -9,16 +9,16 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/3D_landingpage' element={<Home key={Date.now()}/>} />
+          <Route path='/site' element={<Home key={Date.now()}/>} />
           <Route
             path='/*'
             element={
               <>
                 <Routes>
-                <Route path='/3D_landingpage/AI' element={<HiveAI />} />
-                  <Route path='/3D_landingpage/about' element={<About />} />
-                  <Route path='/3D_landingpage/projects' element={<Projects />} />
-                  <Route path='/3D_landingpage/contact' element={<Contact />} />
+                <Route path='/site/AI' element={<HiveAI />} />
+                  <Route path='/site/about' element={<About />} />
+                  <Route path='/site/projects' element={<Projects />} />
+                  <Route path='/site/contact' element={<Contact />} />
                 </Routes>
                 <Footer />
               </>
